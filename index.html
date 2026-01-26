@@ -1,93 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zeyad Shahin Portfolio - Software Engineer, ML Engineer, AWS Cloud Specialist">
-    <title>Zeyad Shahin Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <!-- Cover Section -->
-    <section id="cover">
-        <div class="cover-left">
-            <h2>About Me</h2>
-            <p>
-                I am a software and machine learning engineer with a passion for building scalable, efficient AI models and cloud-based solutions. Currently, I am pursuing an AWS Cloud Specialist certification to enhance my expertise in cloud technologies. With a strong foundation in software engineering, I strive to contribute to impactful projects.
+
+<body class="text-purple-500">
+  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between shadow-purple-100 shadow-2xl p-3 bg-white">
+    <div class="text-3xl ml-3">Zeyad Shahin</div>
+
+    <div>
+      <ul class="space-x-4">
+        <li class="inline">
+          <a href="#">About Me</a>
+        </li>
+        <li class="inline">
+          <a href="#">Education</a>
+        </li>
+        <li class="inline">
+          <a href="#">Projects</a>
+        </li>
+        <li class="inline">
+          <a href="#">Skills</a>
+        </li>
+        <li class="inline">
+          <button
+            class="border-2 border-purple-500 text-purple-500 px-4 py-2 rounded hover:bg-purple-500 hover:text-white active:bg-purple-600">Download
+            CV</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="pt-20"></div>
+  <main class="p-10">
+    <section id="about-me" class=" border-b border-b-purple-500 pb-5 shadow-xl mb-7">
+      <h1 class="text-center font-extrabold text-4xl mb-7">About Me</h1>
+      <div class="grid grid-cols-2">
+        <div class="col-span-1">
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Full-Stack Developer</h2>
+            <p class="text-base leading-relaxed">
+              I am a full-stack developer with strong experience in <span class="font-bold">artificial
+                intelligence</span>, focusing on <span class="font-bold">natural language processing (NLP)</span>, <span
+                class="font-bold">computer vision (CV)</span>, and <span class="font-bold">large language models
+                (LLMs)</span>. I have worked extensively on training and fine-tuning AI models to solve complex problems
+              and enhance real-world applications. Combining a solid foundation in software development with deep
+              knowledge of machine learning, I enjoy creating intelligent systems that integrate advanced AI
+              capabilities into practical, user-focused solutions.
             </p>
+          </div>
         </div>
-        <div class="cover-right">
-            <h1>Zeyad Shahin</h1>
-            <h2>Software Engineer | Machine Learning Engineer | AWS Cloud Enthusiast</h2>
+        <div class="col-span-1 flex h-50">
+          <img class="h-full mx-auto rounded-full" src="cute frog king.jpg">
         </div>
+      </div>
+
+
     </section>
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="edu-item">
-            <h3>Computer Science and Artificial Intelligence, Cairo University</h3>
-            <p>GPA: 3.7 | 2021 - Present</p>
+    <div class="pt-20"></div>
+
+    <section id="education" class=" border-b border-b-purple-500 pb-5 shadow-xl">
+      <h1 class="text-center font-extrabold text-4xl mb-7">Education</h1>
+      <div>
+        <div class="space-y-6">
+          <div class="bg-purple-50 p-6 rounded-lg">
+            <div class="flex justify-between  mb-2">
+              <div>
+                <h3 class="text-xl font-bold">Bachelor of Science in Computer Science and Artificial Intelligence</h3>
+                <p class="text-purple-600 font-semibold">Cairo University</p>
+              </div>
+              <span class="text-sm text-purple-500 font-semibold">Sep. 2021 – Jul. 2025</span>
+            </div>
+            <p class="text-sm text-gray-600">Giza, Egypt</p>
+            <p class="text-sm font-semibold mt-3">GPA: <span class="text-purple-600">3.75</span></p>
+          </div>
         </div>
+      </div>
+    </section>
+    <div class="pt-20"></div>
+
+    <section id="experience" class=" border-b border-b-purple-500 pb-5 shadow-xl">
+      <h1 class="text-center font-extrabold text-4xl mb-7">Experience</h1>
+      <div>
+        <div class="space-y-6">
+          <div class="bg-purple-50 p-6 rounded-lg">
+            <div class="flex justify-between  mb-2">
+              <div>
+                <h3 class="text-xl font-bold">Geospatial Analyst- Intern</h3>
+                <p class="text-purple-600 font-semibold">HERE Technologies</p>
+                <ul class="ms-12 list-disc">
+                  <li>Acquired hands-on experience in geospatial analysis, focusing on data manipulation, visualization,
+                    and extracting
+                    insights.
+                  </li>
+                  <li>
+                    Gained proficiency in utilizing geospatial tools and technologies.
+                  </li>
+                  <li>
+                    Collaborated on projects involving geospatial data integration and mapping for real-world
+                    applications
+                  </li>
+                </ul>
+              </div>
+              <span class="text-sm text-purple-500 font-semibold">Nov 2024– Dec 2024</span>
+            </div>
+            <p class="text-sm text-gray-600">Cairo, Egypt · Hybrid</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-6 mt-6">
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <div class="flex justify-between mb-2">
+            <div>
+              <h3 class="text-xl font-bold">Summer Intern - Business Analyst Trainee</h3>
+              <p class="text-purple-600 font-semibold">Ministry of Communication and Information</p>
+              <ul class="ms-12 list-disc">
+                <li>Gained in-depth knowledge of Business Analysis, focusing on understanding and defining business
+                  needs to propose effective solutions.</li>
+                <li>Learned about business process mapping, which involves visually representing the steps in a business
+                  process to identify areas for improvement.</li>
+              </ul>
+            </div>
+            <span class="text-sm text-purple-500 font-semibold">Jul 2024 – Aug 2024</span>
+          </div>
+          <p class="text-sm text-gray-600">Cairo, Egypt · Hybrid</p>
+        </div>
+
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <div class="flex justify-between mb-2">
+            <div>
+              <h3 class="text-xl font-bold">Summer Intern - Networks and Telecommunication</h3>
+              <p class="text-purple-600 font-semibold">Nokia</p>
+              <ul class="ms-12 list-disc">
+                <li>Acquired knowledge on diverse network technologies including 4G, 5G, and fixed networks.</li>
+                <li>Gained insights into AI and ML applications in the field of network and telecommunication.</li>
+              </ul>
+            </div>
+            <span class="text-sm text-purple-500 font-semibold">Aug 2023 – Sep 2023</span>
+          </div>
+          <p class="text-sm text-gray-600">Cairo, Egypt · Remote</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills & Relevant Projects</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C, C++</li>
-                    <li>Java</li>
-                    <li>Rust</li>
-                    <li>Bash/Unix Systems</li>
-                </ul>
-            </div>
-            <div class="skill">
-                <h3>Machine Learning & AI</h3>
-                <ul>
-                    <li>TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>Deep Learning, NLP</li>
-                    <li>Transformers, LLMs</li>
-                </ul>
-            </div>
-            <div class="skill">
-                <h3>Cloud Computing</h3>
-                <ul>
-                    <li>AWS Cloud (In Progress)</li>
-                    <li>Data Structures & Algorithms</li>
-                    <li>OOP, SOLID Principles</li>
-                </ul>
-            </div>
+    <div class="pt-20"></div>
+    <section id="featured-projects" class=" border-b border-b-purple-500 pb-5 shadow-xl">
+      <h1 class="text-center font-extrabold text-4xl mb-7">Featured Projects</h1>
+      <div class="space-y-6 ">
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">Study Partner (Graduation Project)</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Python (Django), React | 2025–2026</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Developed an AI-powered study assistant that leverages Retrieval-Augmented Generation (RAG) to answer
+              academic questions, generate personalized quizzes, and evaluate user performance.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Tetris AI (Python, Genetic Algorithm)</h3>
-            <p>Developed an AI player for Tetris using a genetic algorithm, improving its performance with each iteration. <a href="https://github.com/OmarElgammal1/Evolutionary-Computation-Algorithms">GitHub Link</a></p>
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">Image Synthesis with GAN</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Python (PyTorch) | 25/26</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Trained a variant of Generative Adversarial Network (GAN) to generate realistic images from random
+              noise.</li>
+          </ul>
         </div>
-        <div class="project">
-            <h3>Tiny Gzip (C++)</h3>
-            <p>Implemented Deflate’s inflating algorithm to decompress Gzip files efficiently. <a href="https://github.com/bieno12/tiny-gzip-cpp">GitHub Link</a></p>
-        </div>
-        <div class="project">
-            <h3>Transformers from Scratch (Python, PyTorch)</h3>
-            <p>Built a transformer model from scratch for sentiment analysis. <a href="https://github.com/bieno12/dl-notebooks/blob/main/sentiment-analysis.ipynb">GitHub Link</a></p>
-        </div>
-        <div class="project">
-            <h3>Chatbot Web Application (Rust, Actix Web)</h3>
-            <p>Developed a web-based chatbot with Actix Web for real-time communication. <a href="https://github.com/bieno12/chatbot-web-application-rs/">GitHub Link</a></p>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Zeyad Shahin. All Rights Reserved.</p>
-    </footer>
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">Crowd Person Tracking with YOLOX and BoostTrack</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Python (YOLOX, BoostTrack) | 25/26</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Implemented a real-time crowd tracking system using the YOLOX object detector integrated with the
+              BoostTrack algorithm for multi-object tracking.</li>
+            <li>Processed public datasets (e.g., MOT17, CrowdHuman) and evaluated tracking performance using standard
+              metrics such as MOTA and HOTA.</li>
+            <li>Optimized detection-tracking pipeline for crowded scenes by tuning detection thresholds and managing ID
+              switches.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">German-to-English Translation Model</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Python (PyTorch)</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Implemented a Transformer-based model from scratch to translate German to English.</li>
+            <li>Trained the model using German-English datasets, optimizing for translation accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">Chat bot Web Application</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Rust</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Developed a web application using Actix Web that allows users to hold conversations with a chat bot.
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 border border-purple-100 shadow-lg rounded-lg">
+          <h2 class="font-bold text-lg mb-2">Student Affairs System</h2>
+          <p class="text-sm text-purple-600 font-semibold mb-3">Python (Django)</p>
+          <ul class="text-sm text-gray-700 space-y-2 ms-4 list-disc">
+            <li>Created a CRUD web application for managing student information.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="pt-20"></div>
+
+    <section id="extracurriculum" class=" border-b border-b-purple-500 pb-5 shadow-xl">
+      <h1 class="text-center font-extrabold text-4xl mb-7">Extra Curriculum</h1>
+
+      <div class="space-y-6 mt-6">
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold">Winner of GenAI Agent Hackathon by Stakpak</h3>
+          <p class="text-purple-600 font-semibold">Designed and implemented an innovative solution leveraging autonomous AI agents to automate documentation validation.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold">Winner of HERE Technologies Hackathon</h3>
+          <p class="text-purple-600 font-semibold">Developed a geospatial data analysis solution to extract insights from probe data.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold">Participant in Orange Egypt Hackathon</h3>
+          <p class="text-purple-600 font-semibold">Conceptualized and presented an innovative tech-driven solution with strong business value.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold">Participant, NASA Space Apps Challenge 2025</h3>
+          <p class="text-purple-600 font-semibold">Developed an AI-powered information retrieval system using Retrieval-Augmented Generation (RAG) to process and extract insights from large document datasets.</p>
+        </div>
+      </div>
+    </section>
+    <div class="pt-20"></div>
+
+    <section class=" border-b border-b-purple-500 pb-5 shadow-xl">
+      <h1 class="text-center font-extrabold text-4xl mb-7">Contact Me</h1>
+      <div class="flex justify-center gap-8 mb-7">
+        <a href="mailto:zeyashahin2015@gmail.com"
+          class="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded hover:bg-purple-500 hover:text-white transition">Email</a>
+        <a href="https://www.linkedin.com/in/zeyadshahin/" target="_blank"
+          class="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded hover:bg-purple-500 hover:text-white transition">LinkedIn</a>
+        <a href="https://github.com/bieno12" target="_blank"
+          class="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded hover:bg-purple-500 hover:text-white transition">GitHub</a>
+      </div>
+      <p class="text-center text-gray-600">Thank you!</p>
+    </section>
+    <div class="pt-20"></div>
+
+  </main>
+
+
+
+  <script>
+    let currentProject = 0;
+    const totalProjects = 6;
+    const track = document.getElementById('project-track');
+
+    function changeProject(direction) {
+      // Update index and handle looping
+      currentProject = (currentProject + direction + totalProjects) % totalProjects;
+
+      // Shift the track horizontally
+      const percentage = currentProject * -100;
+      track.style.transform = `translateX(${percentage}%)`;
+    }
+  </script>
 </body>
+
 </html>
