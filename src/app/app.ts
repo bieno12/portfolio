@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Header } from "./header/header";
 import { HeroSection } from "./hero-section/hero-section";
+import { BioSection } from "./bio-section/bio-section";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, HeroSection],
+  imports: [Header, HeroSection, BioSection],
   templateUrl: './app.html',
 })
 export class App {
