@@ -1,1 +1,41 @@
-<p>skills-section works!</p>
+<style>
+    .tag-custom {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        /* Makes it a pill */
+        background: none;
+        border: 2px solid #6366f1;
+        /* Your custom color (e.g., Indigo) */
+        color: #6366f1;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* Hover effect */
+    .tag-custom:hover {
+        background-color: #6366f1;
+        color: white;
+        transform: translateY(-2px);
+        /* Subtle lift effect */
+        box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+    }
+</style>
+<div class="container col-xxl-8 px-4 py-5">
+    <h1 class="display-5 fw-bold text-center">Skills</h1>
+    <ul class="categories list-group list-group-flush">
+        @for (category of SKILLS; track category.id) {
+        <li class="list-group-item">
+            <h3>{{category.category}}</h3>
+            <ul>
+                @for (skill of category.items; track skill.id) {
+                <button class="tag-custom me-2 mb-2" (click)="chooseSkill(skill.id)">{{skill.name}}</button>
+                }
+            </ul>
+        </li>
+        }
+    </ul>
+    <skill-progress [skill]="selectedSkill"></skill-progress>
+</div>
